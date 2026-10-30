@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Sofia Due | The Apothecary's Husband</title>
+<meta name="description" content="Sofia Due writes historical fiction set in first century Roman Britain and contemporary romance set in Cornwall and London. The Apothecary's Husband, Finding Jack, Ed &amp; Lily.">
+<meta property="og:title" content="A homepage for Sofia Due, made by Sparsh Saini">
+<meta property="og:description" content="A homepage idea for Sofia Due and The Apothecary's Husband, made by Sparsh Saini. Not her official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/sofiadue/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%237a1a1c'/><path d='M16 28V9M16 15c-4-1-6-4-6-7 4 0 6 3 6 7zm0 4c4-1 7-4 7-8-4 0-7 3-7 8z' fill='%23d8d8d6'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/ground.jpg">
+<style>
+/* From The Apothecary's Husband cover: oxblood plaster, near-black edges, silver herbs, the crest's
+   bright red, white tall capitals (Italiana) and an old-style italic (Sorts Mill Goudy).
+   The Cornwall and London section borrows Finding Jack's sunset peach and Ed & Lily's sky blue. */
+:root {
+  --plaster: #7a1a1c;
+  --plaster-2: #5c1215;
+  --edge: #2a0907;
+  --crest: #c4121b;
+  --silver: #d9d9d7;
+  --silver-2: #a9a9a7;
+  --white: #fbfaf7;
+  --peach: #f7e2bf;
+  --sun: #f2b26b;
+  --rose: #d9707e;
+  --sky: #7cc7ec;
+  --navy: #1d4f91;
+  --ink: #2a1a17;
+  --display: "Italiana", "Didot", serif;
+  --text: "Sorts Mill Goudy", "Goudy Old Style", Georgia, serif;
+  --gut: clamp(1rem, 5vw, 4rem);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--edge); color: var(--white); font-family: var(--text); font-size: 1.15rem; line-height: 1.6; overflow-x: hidden; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--silver); outline-offset: 3px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.02; margin: 0; letter-spacing: .02em; -webkit-text-stroke: .02em currentColor; }
+em { font-style: italic; }
+
+.strip { position: relative; z-index: 30; background: var(--silver); color: var(--edge); font-size: .95rem; text-align: center; padding: .45rem var(--gut); }
+
+/* ---------- nav: the two worlds she writes in ---------- */
+.worlds { position: fixed; z-index: 40; left: 50%; bottom: 12px; transform: translateX(-50%); display: flex; background: rgba(42, 9, 7, .92); border: 1px solid var(--silver-2); border-radius: 3px; padding: 3px; max-width: calc(100vw - 20px); }
+.worlds a { font-family: var(--display); -webkit-text-stroke: .02em currentColor; text-decoration: none; font-size: 1rem; letter-spacing: .06em; padding: .42rem .8rem .36rem; color: var(--silver); white-space: nowrap; border-radius: 2px; }
+.worlds a.on { background: var(--silver); color: var(--edge); }
+.worlds a.cw.on { background: var(--peach); color: var(--ink); }
+@media (min-width: 900px) { .worlds { bottom: auto; top: 46px; left: var(--gut); transform: none; } .worlds a { font-size: 1.1rem; padding: .45rem 1.1rem .38rem; } }
+
+/* ---------- the herbs part ---------- */
+.hero { position: relative; height: 380vh; }
+.stage { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; background: radial-gradient(120% 90% at 50% 40%, var(--plaster-2), var(--edge) 75%); }
+.cover { position: absolute; container-type: inline-size; left: 50%; top: 0; transform: translateX(-50%); width: min(100vw, calc((100svh - 150px) * .6484)); aspect-ratio: 830 / 1280; overflow: hidden; }
+.pl { position: absolute; will-change: transform, opacity; max-width: none; }
+.ground { left: 0; top: 0; width: 100%; transform-origin: 50% 55%; }
+.helmet { left: 29.88%; top: 50.94%; width: 37.95%; transform-origin: 50% 60%; }
+.herbs-l { left: 0; top: 0; width: 51.69%; transform-origin: 0% 100%; }
+.herbs-r { left: 50%; top: 0; width: 50%; transform-origin: 100% 100%; }
+.ttl { position: absolute; inset: 0; pointer-events: none; text-align: center; color: var(--white); text-shadow: .25cqw .5cqw 1.2cqw rgba(30, 4, 4, .55); }
+.ttl .tag { position: absolute; left: 0; right: 0; top: 3.1%; margin: 0; font-style: italic; font-size: 5.1cqw; line-height: 1.32; }
+.ttl h1 { position: absolute; left: 0; right: 0; top: 15.9%; font-size: 15.4cqw; line-height: 1.24; letter-spacing: -.005em; -webkit-text-stroke: .1cqw var(--white); }
+.ttl h1 span { display: block; will-change: opacity; transform: scaleX(.97); }
+.ttl h1 .ap { font-size: 15.4cqw; letter-spacing: -.01em; transform: scaleX(.95); }
+.ttl .from { position: absolute; left: 0; right: 0; top: 82.6%; margin: 0; font-style: italic; font-size: 4.05cqw; }
+.ttl .from b { font-family: var(--display); font-style: normal; font-weight: 400; font-size: 4.6cqw; letter-spacing: .03em; }
+.ttl .name { position: absolute; left: 0; right: 0; top: 87.2%; margin: 0; font-family: var(--display); font-size: 13.8cqw; transform: scaleX(.82); letter-spacing: .035em; -webkit-text-stroke: .1cqw var(--white); line-height: 1; }
+.cap { position: absolute; left: var(--gut); right: var(--gut); top: calc(min(100vw, (100svh - 150px) * .6484) * 1.5422 + 12px); }
+.cap p { margin: 0; font-size: 1.08rem; line-height: 1.45; opacity: 0; will-change: opacity; }
+.cap p.c1 { opacity: 1; }
+.cap p.c2 { position: absolute; left: 0; right: 0; top: 0; pointer-events: none; }
+.cap p.c2.live { pointer-events: auto; }
+.cap i { color: var(--silver); }
+.btn { display: inline-block; margin-top: .55rem; font-family: var(--display); -webkit-text-stroke: .02em currentColor; font-size: 1.08rem; letter-spacing: .07em; text-decoration: none; color: var(--white); border: 1px solid var(--silver); padding: .5rem 1.1rem .42rem; border-radius: 2px; background: rgba(42, 9, 7, .35); }
+.btn:hover { background: var(--silver); color: var(--edge); }
+.btn.solid { background: var(--silver); color: var(--edge); }
+.btn.solid:hover { background: var(--white); }
+@media (min-width: 900px) {
+  .cover { width: calc(100svh * .6484); left: 58%; -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent); mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent); }
+  .stage { background: radial-gradient(60% 80% at 58% 50%, var(--plaster-2), var(--edge) 80%); }
+  .cap { left: var(--gut); right: auto; top: 50%; width: min(24rem, 27vw); transform: translateY(-50%); }
+  .cap p { font-size: 1.3rem; }
+}
+
+/* ---------- sections ---------- */
+section.rome, section.cornwall, section.about, section.fair, section.stories { padding: clamp(3.5rem, 9vw, 6.5rem) var(--gut); }
+h2 { font-size: clamp(2.3rem, 8vw, 4rem); }
+.lede { max-width: 40rem; margin: .9rem 0 0; font-size: 1.22rem; }
+.place { font-style: italic; color: var(--silver); font-size: 1.15rem; margin: 0 0 .4rem; }
+
+.rome { background: var(--plaster) url(img/ground.jpg) center / cover; display: grid; gap: 2.2rem; }
+@media (min-width: 900px) { .rome { grid-template-columns: minmax(0, 24rem) 1fr; gap: 4.5rem; align-items: center; } }
+.rome img { width: min(100%, 22rem); box-shadow: 10px 14px 0 var(--edge); }
+.rome .blurb p { margin: .9rem 0 0; max-width: 38rem; }
+.rome .when { font-family: var(--display); -webkit-text-stroke: .02em currentColor; font-size: 1.35rem; letter-spacing: .04em; margin-top: 1.4rem; color: var(--silver); }
+.rome .btns { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: .6rem; }
+
+/* Cornwall and London: the light changes */
+.cornwall { background: linear-gradient(180deg, var(--peach), #fbefda 70%); color: var(--ink); }
+.cornwall h2 { color: var(--rose); -webkit-text-stroke: .02em var(--rose); }
+.cornwall .place { color: #9a5b3e; }
+.pair { display: grid; gap: 3rem; margin-top: 2.6rem; }
+@media (min-width: 900px) { .pair { grid-template-columns: 1fr 1fr; gap: 4rem; } }
+.bk { display: grid; grid-template-columns: 38% 1fr; gap: 1.2rem; align-items: start; }
+.bk img { box-shadow: 6px 9px 0 rgba(42, 26, 23, .18); }
+.bk h3 { font-size: clamp(1.8rem, 5vw, 2.4rem); }
+.bk.jack h3 { color: var(--rose); -webkit-text-stroke: .02em var(--rose); }
+.bk.lily h3 { color: var(--navy); -webkit-text-stroke: .02em var(--navy); }
+.bk p { margin: .5rem 0 0; font-size: 1.05rem; }
+.bk .q { font-style: italic; }
+.btn.light { color: var(--ink); border-color: var(--ink); background: none; }
+.btn.light:hover { background: var(--ink); color: var(--peach); }
+
+.about { background: var(--edge); display: grid; gap: 2.2rem; }
+@media (min-width: 900px) { .about { grid-template-columns: 20rem 1fr; gap: 4.5rem; align-items: start; } }
+.about img { width: min(100%, 20rem); filter: saturate(.9); }
+.about p { max-width: 40rem; margin: .9rem 0 0; }
+.about .babcia { border-left: 2px solid var(--silver-2); padding-left: 1.1rem; margin-top: 1.6rem; }
+
+.fair { background: var(--plaster-2); text-align: center; }
+.fair .place { margin-bottom: .8rem; }
+.fair .t { font-family: var(--display); -webkit-text-stroke: .03em currentColor; font-size: clamp(4.5rem, 22vw, 9rem); line-height: .95; margin: .6rem 0 .4rem; }
+.fair p { max-width: 34rem; margin: .4rem auto; }
+
+.stories { background: var(--edge); }
+.st { display: grid; gap: 2.4rem; margin-top: 2.2rem; }
+@media (min-width: 900px) { .st { grid-template-columns: 1fr 1fr; gap: 4rem; } }
+.st blockquote { margin: 0; font-style: italic; font-size: 1.22rem; color: var(--silver); }
+.st h3 { font-size: 1.8rem; margin-bottom: .6rem; }
+.st a.more { display: inline-block; margin-top: .8rem; }
+.news { margin-top: 3rem; max-width: 40rem; }
+footer { background: var(--edge); color: #b9a19c; text-align: center; font-size: .92rem; padding: 1.1rem var(--gut) 5.5rem; border-top: 1px solid rgba(217, 217, 215, .15); }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero { height: auto; }
+  .stage { position: relative; height: 100svh; }
+}
+</style>
+</head>
+<body>
+<div class="strip">A homepage idea made by Sparsh Saini for Sofia Due. Not their official site.</div>
+<nav class="worlds" aria-label="Sections">
+  <a href="#rome" class="rm on">Roman Britain</a>
+  <a href="#cornwall" class="cw">Cornwall &amp; London</a>
+  <a href="#fair" class="ox">S09</a>
+</nav>
+
+<main>
+<section class="hero" id="top" aria-label="The Apothecary's Husband">
+  <div class="stage">
+    <div class="cover">
+      <img class="pl ground" src="img/ground.jpg" alt="" width="830" height="1280">
+      <img class="pl helmet" src="img/helmet.webp" alt="" width="315" height="389">
+      <img class="pl herbs-l" src="img/herbs-l.webp" alt="" width="429" height="1280">
+      <img class="pl herbs-r" src="img/herbs-r.webp" alt="" width="415" height="1280">
+      <div class="ttl">
+        <p class="tag">In Roman Britain,<br>every promise has a price...</p>
+        <h1><span class="t1">THE</span><span class="ap t2">APOTHECARY’S</span><span class="t3">HUSBAND</span></h1>
+        <p class="from">From the author of <b>FINDING JACK</b></p>
+        <p class="name">SOFIA DUE</p>
+      </div>
+    </div>
+    <div class="cap">
+      <p class="c1"><i>Aquae Sulis, Roman Britain, 90 CE.</i> Livia’s father is dying, and he has arranged her marriage.</p>
+      <p class="c2">A new historical novel by Sofia Due, out 28 January 2027.<br><a class="btn" href="#rome">Read about the book</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="rome" id="rome">
+  <img src="img/apothecary.jpg" alt="The Apothecary's Husband by Sofia Due: a Roman helmet and silver herbs on red" width="560" height="864" loading="lazy">
+  <div class="blurb">
+    <p class="place">Aquae Sulis, Roman Britain, 90 CE</p>
+    <h2>The Apothecary’s Husband</h2>
+    <p>Livia’s father is dying, and when he arranges her marriage to Fabius, the son of his closest friend, duty must come first. But her heart belongs to Fabius’s brother, Marcus, while Fabius himself is in love with his best friend.</p>
+    <p>On their wedding day, an anonymous curse demanding vengeance for the marriage appears on the temple wall, setting in motion a chain of events that will alter all their lives forever.</p>
+    <p>Livia is determined to honour her father’s legacy as an apothecary, but she must navigate the ambitions of those who would sacrifice happiness for power and status.</p>
+    <p class="when">Paperback, 28 January 2027</p>
+    <div class="btns">
+      <a class="btn solid" href="https://bookguild.co.uk/bookshop/historical/the-apothecary-s-husband">The Book Guild</a>
+      <a class="btn" href="https://www.amazon.co.uk/dp/1835745687">Amazon</a>
+    </div>
+  </div>
+</section>
+
+<section class="cornwall" id="cornwall">
+  <p class="place">Cornwall and London</p>
+  <h2>Second chances and fresh starts</h2>
+  <p class="lede">Sofia’s contemporary novels are set where she spends her own time: the capital’s urban energy and the windswept coast of north Cornwall.</p>
+  <div class="pair">
+    <article class="bk jack">
+      <img src="img/findingjack.jpg" alt="Finding Jack by Sofia Due cover" width="480" height="752" loading="lazy">
+      <div>
+        <h3>Finding Jack</h3>
+        <p class="q">A fresh start in a new place. But are the past and the present about to collide?</p>
+        <p>Gennie moves back to Cornwall in search of a fresh start, until ex-soldier Jack comes along with the same idea, a face from the past.</p>
+        <a class="btn light" href="https://mybook.to/Finding-Jack">Buy the book</a>
+      </div>
+    </article>
+    <article class="bk lily">
+      <img src="img/edlily.jpg" alt="Ed &amp; Lily by Sofia Due cover" width="480" height="751" loading="lazy">
+      <div>
+        <h3>Ed &amp; Lily</h3>
+        <p class="q">A Christmas getaway. Thirty-six hours until departure. Will Ed and Lily make the connection?</p>
+        <p>It’s the day before Christmas Eve and the relationship everyone believed was rock-solid is in trouble. A story about love, loss and chasing your dreams.</p>
+        <a class="btn light" href="https://mybook.to/Ed-and-Lily">Buy the book</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <img src="img/sofia.jpg" alt="Sofia Due" width="640" height="754" loading="lazy">
+  <div>
+    <h2>Sofia Due</h2>
+    <p>Born in London, Sofia now divides her time between the capital and the north Cornish coast. She still works as a lawyer, and spent many years in human rights law with refugees and survivors of modern slavery, themes which crop up in her stories.</p>
+    <p>Her Saturday job on Portobello Road as a teenager made it into Ed &amp; Lily. She writes about second chances because the people who didn’t get it all their own way the first time often have the best stories.</p>
+    <p class="babcia">She is the granddaughter of a Polish refugee. Her babcia’s own book, The Unsettled Account, went on being borrowed from libraries for years, and in 2018 it helped a family the Dues thought they had lost find them again. <a href="https://sofiaduebooks.com/newsletters/can-a-book-really-change-your-life/">Sofia tells the story here.</a></p>
+  </div>
+</section>
+
+<section class="fair" id="fair">
+  <p class="place">Oxford Indie Book Fair</p>
+  <h2>Come and find Sofia</h2>
+  <div class="t">S09</div>
+  <p>Sunday 22 November 2026, 11am to 4.30pm, Oxford Examination Schools, High Street. Free to visit.</p>
+  <p>And look out for a new release in January 2027.</p>
+</section>
+
+<section class="stories" id="stories">
+  <h2>Two stories to read now</h2>
+  <div class="st">
+    <article>
+      <h3>Snow Day</h3>
+      <blockquote>Even if he could drive, he’d never get a van up that hill. Not in weather like this.</blockquote>
+      <a class="btn more" href="https://sofiaduebooks.com/short-stories/snow-day/">Read Snow Day</a>
+    </article>
+    <article>
+      <h3>The Pattern Cutter</h3>
+      <blockquote>If Helen kept her eyes closed, she was still in Paris, in the tiny second floor flat with its high ceilings and creaky plumbing.</blockquote>
+      <a class="btn more" href="https://sofiaduebooks.com/short-stories/the-pattern-cutter/">Read The Pattern Cutter</a>
+    </article>
+  </div>
+  <p class="news">For book news, offers and competitions, Sofia’s newsletter is the first to hear. <a href="https://sofiaduebooks.com/#newsletter">Sign up on her site</a>, or say hello on <a href="https://www.instagram.com/sofia_due_words">Instagram</a>.</p>
+</section>
+</main>
+<footer>A mockup made by Sparsh Saini for Sofia Due. Not affiliated, not live.</footer>
+
+<script>
+(() => {
+  // the herbs part: both halves of the cover's silver herbs start swung in across the frame on
+  // hinges at the bottom corners, and turn back out to their printed places as you scroll, while
+  // the helmet comes forward out of the plaster and the title settles in
+  const hero = document.querySelector('.hero');
+  const q = s => hero.querySelector(s);
+  const ground = q('.ground'), helmet = q('.helmet'), hl = q('.herbs-l'), hr = q('.herbs-r');
+  const t1 = q('.t1'), t2 = q('.t2'), t3 = q('.t3'), from = q('.from'), name = q('.name');
+  const c1 = q('.c1'), c2 = q('.c2');
+  const still = matchMedia('(prefers-reduced-motion: reduce)');
+  const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
+  const ease = t => 1 - Math.pow(1 - t, 3);
+  const io = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+  let ticking = false;
+  function frame() {
+    ticking = false;
+    let p;
+    if (still.matches) p = 1;
+    else { const r = hero.getBoundingClientRect(); p = clamp(-r.top / (hero.offsetHeight - innerHeight)); }
+    const a = io(clamp((p - .03) / .7)), u = 1 - a;
+    // left hinge turns clockwise, right anticlockwise: closed, they cross the middle
+    hl.style.transform = `rotate(${(30 * u).toFixed(3)}deg) scale(${(1 + .3 * u).toFixed(4)})`;
+    hr.style.transform = `rotate(${(-30 * u).toFixed(3)}deg) scale(${(1 + .3 * u).toFixed(4)})`;
+    ground.style.transform = `scale(${(1 + .08 * u).toFixed(4)})`;
+    const h = ease(clamp((p - .12) / .62));
+    helmet.style.transform = `translateY(${(9 * (1 - h)).toFixed(2)}%) scale(${(.72 + .28 * h).toFixed(4)})`;
+    helmet.style.opacity = (.12 + .88 * h).toFixed(3);
+    t1.style.opacity = clamp((p - .48) / .14).toFixed(3);
+    t2.style.opacity = clamp((p - .56) / .14).toFixed(3);
+    t3.style.opacity = clamp((p - .64) / .14).toFixed(3);
+    const e = clamp((p - .74) / .12).toFixed(3);
+    from.style.opacity = e; name.style.opacity = e;
+    const k = clamp((p - .8) / .1);
+    c1.style.opacity = (1 - k).toFixed(3);
+    c2.style.opacity = k.toFixed(3);
+    c2.classList.toggle('live', k > .5);
+  }
+  const go = () => { if (!ticking) { ticking = true; requestAnimationFrame(frame); } };
+  addEventListener('scroll', go, { passive: true });
+  addEventListener('resize', go);
+  still.addEventListener('change', go);
+  frame();
+
+  // the nav lights the world you are in
+  const links = [...document.querySelectorAll('.worlds a')];
+  const map = { top: 0, rome: 0, cornwall: 1, about: 1, fair: 2, stories: 2 };
+  const obs = new IntersectionObserver(es => {
+    es.forEach(e => { if (e.isIntersecting) links.forEach((l, i) => l.classList.toggle('on', i === map[e.target.id])); });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  document.querySelectorAll('main > section').forEach(s => obs.observe(s));
+})();
+</script>
+</body>
+</html>
